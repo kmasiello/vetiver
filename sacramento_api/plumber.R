@@ -11,7 +11,7 @@ if (FALSE) {
     library(ranger)
     library(workflows)
 }
-b <- board_rsconnect("envvar", server = "https://colorado.posit.co/rsc")
+b <- board_connect(auth = "envvar")
 v <- vetiver_pin_read(b, "katie.masiello/katie_sacramento_rf", version = "56410")
 
 #* @plumber
